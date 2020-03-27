@@ -1,17 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int a, b, pil, hasil;
+int a, b, pil;
+int hasil=0;
 
 int penjumlahan ();
+int pengurangan ();
 
 int main () {
    cout<<"Kalkulator Sederhana : "<<endl;
    cout<<"1. Penjumlahan"<<endl;
+   cout<<"2. Pengurangan"<<endl;
    cout<<"Pilihan : ";
    cin>>pil;
    switch (pil) {
       case 1: penjumlahan (); break;
+      case 2: pengurangan (); break;
       default: cout<<"Pilihan Tidak Tersedia !!";
 }
 }
@@ -22,4 +26,12 @@ int penjumlahan () {
    cout<<"Masukkan Nilai Kedua : "; cin>>b;
    hasil=a+b;
    cout<<"Hasil Penjumlahan : "<<hasil<<endl<<endl;
+}
+int pengurangan (){
+   cout<<endl<<endl;
+   cout<<"--Anda Memilih Pengurangan=="<<endl;
+   cout<<"Masukkan Nilai Pertama : "; cin>>a;
+   cout<<"Masukkan Nilai Kedua : "; cin>>b;
+   hasil=a-b;
+   cout<<"Hasil Pengurangan : "<<hasil<<endl<<endl;
 }
