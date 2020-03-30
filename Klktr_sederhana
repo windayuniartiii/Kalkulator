@@ -9,12 +9,12 @@ int perkalian();
 int main () {
    cout<<"Kalkulator Sederhana : "<<endl;
    cout<<"1. Penjumlahan"<<endl;
-   cout<<"2.perkalian"<<endl;
+   cout<<"3.perkalian"<<endl;
    cout<<"Pilihan : ";
    cin>>pil;
    switch (pil) {
       case 1: penjumlahan (); break;
-      case 2: perkalian ();break;
+      case 3: perkalian ();break;
       default: cout<<"Pilihan Tidak Tersedia !!";
 }
 }
