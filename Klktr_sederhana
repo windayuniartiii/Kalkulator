@@ -4,17 +4,20 @@ using namespace std;
 int a, b, pil, hasil;
 
 int penjumlahan ();
+int perkalian();
 int pengurangan ();
 
 int main () {
    cout<<"Kalkulator Sederhana : "<<endl;
    cout<<"1. Penjumlahan"<<endl;
-   cout<<"2. Pengurangan"<<endl;
+   cout<<"2.perkalian"<<endl;
+   cout<<"3. Pengurangan"<<endl;
    cout<<"Pilihan : ";
    cin>>pil;
    switch (pil) {
       case 1: penjumlahan (); break;
-      case 2: pengurangan (); break;
+      case 2: perkalian ();break;
+      case 3: pengurangan (); break;
       default: cout<<"Pilihan Tidak Tersedia !!";
 }
 }
@@ -26,6 +29,14 @@ int penjumlahan () {
    hasil=a+b;
    cout<<"Hasil Penjumlahan : "<<hasil<<endl<<endl;
 }
+int perkalian () {
+   cout<<endl<<endl;
+   cout<<"--Anda Memilih perkalian=="<<endl;
+   cout<<"Masukkan Nilai Pertama : "; cin>>a;
+   cout<<"Masukkan Nilai Kedua : "; cin>>b;
+   hasil=a*b;
+   cout<<"Hasil Perkalian : "<<hasil<<endl<<endl;
+
 int pengurangan () {
    cout<<endl<<endl;
    cout<<"--Anda Memilih Pengurangan=="<<endl;
@@ -33,4 +44,5 @@ int pengurangan () {
    cout<<"Masukkan Nilai Kedua : "; cin>>b;
    hasil=a-b;
    cout<<"Hasil Penjumlahan : "<<hasil<<endl<<endl;
+
 }
